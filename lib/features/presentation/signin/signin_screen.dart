@@ -69,7 +69,9 @@ class _SignInScreenState extends State<SignInScreen> {
           child: Stack(
             alignment: Alignment.center,
             children: [
-              BackgroundImage(),
+              BackgroundImage(
+                opacity: 0.05,
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(
                   vertical: AppSpacing.paddingS50,
@@ -187,7 +189,7 @@ class _SignInScreenState extends State<SignInScreen> {
                               AppConstants.createAccountNow,
                               style: AppTextStyles.subtitle.copyWith(
                                 fontWeight: FontWeight.bold,
-                                color: AppColors.ovenBrown,
+                                color: AppColors.defaultText,
                               ),
                             ),
                             onTap: () => Get.toNamed(AppRoutes.signUp),

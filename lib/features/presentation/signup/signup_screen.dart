@@ -83,7 +83,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
           child: Stack(
             alignment: Alignment.center,
             children: [
-              BackgroundImage(),
+              BackgroundImage(
+                opacity: 0.05,
+              ),
               Positioned(
                 top: AppSpacing.paddingS50,
                 left: AppSpacing.paddingS20,

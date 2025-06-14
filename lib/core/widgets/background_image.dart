@@ -7,14 +7,17 @@ class BackgroundImage extends StatelessWidget {
   const BackgroundImage({
     super.key,
     this.divider = 1.0,
+    this.opacity = 0.1,
   });
 
   final double? divider;
 
+  final double opacity;
+
   @override
   Widget build(BuildContext context) {
     return Opacity(
-      opacity: 0.1,
+      opacity: opacity,
       child: Image.asset(
         AppImages.background,
         width: context.width,

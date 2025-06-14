@@ -34,7 +34,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           children: [
             Align(
               alignment: Alignment.bottomCenter,
-              child: BackgroundImage(divider: 1.8),
+              child: BackgroundImage(
+                divider: 1.0,
+                opacity: 0.05,
+              ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
